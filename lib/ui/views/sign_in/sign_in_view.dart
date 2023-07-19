@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:personal_finance_app_beta/ui/common/ui_helpers.dart';
 import 'package:personal_finance_app_beta/ui/widgets/dumb_widgets/app_button_style.dart';
 import 'package:personal_finance_app_beta/ui/widgets/dumb_widgets/app_text_field.dart';
+import 'package:personal_finance_app_beta/ui/widgets/dumb_widgets/error_text.dart';
 import 'package:stacked/stacked.dart';
 
 import 'sign_in_viewmodel.dart';
@@ -16,7 +17,7 @@ class SignInView extends StackedView<SignInViewModel> {
     Widget? child,
   ) {
     return Scaffold(
-      backgroundColor: Theme.of(context).colorScheme.background,
+      backgroundColor: Colors.white,
       appBar: AppBar(
         title: const Text("Sign in"),
       ),
@@ -34,8 +35,32 @@ class SignInView extends StackedView<SignInViewModel> {
               hintText: 'Password',
               onChanged: viewModel.onPasswordChanged,
             ),
+            if (viewModel.validationMessage != null)
+              ErrorText(errorMessage: viewModel.validationMessage!),
             verticalSpace(10),
-            AppButton(title: 'Sign in', onPressed: viewModel.signIn)
+            AppButton(
+              title: 'Sign in',
+              onPressed: viewModel.signIn,
+              loading: viewModel.isBusy,
+            ),
+            verticalSpace(10),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const Text('Don\'t have an account?'),
+                horizontalSpaceSmall,
+                InkWell(
+                  onTap: viewModel.navigateToSignUp,
+                  child: const Text(
+                    'Sign up',
+                    style: TextStyle(
+                      fontWeight: FontWeight.w700,
+                      decoration: TextDecoration.underline,
+                    ),
+                  ),
+                ),
+              ],
+            ),
           ],
         ),
       ),

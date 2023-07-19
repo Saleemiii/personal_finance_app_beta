@@ -28,7 +28,7 @@ class AppTextField extends StatelessWidget {
         ),
       ),
       autocorrect: false,
-      obscureText: false,
+      obscureText: obsecureText,
       onChanged: onChanged,
     );
   }
