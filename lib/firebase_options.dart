@@ -51,7 +51,7 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyAIi3m5tr3rnwyHZNOwTNEntpH89lpVVnU',
-    appId: '1:682545265646:android:31fe5f76a9b77a9a33ecff',
+    appId: '1:682545265646:android:d6cbec801e7c317d33ecff',
     messagingSenderId: '682545265646',
     projectId: 'personal-finance-app-90e94',
     storageBucket: 'personal-finance-app-90e94.appspot.com',
@@ -59,11 +59,11 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyBv7u0Hnr8fjQZD4Yx8iv0aPOEDB08AOZ0',
-    appId: '1:682545265646:ios:e851a7a4e21d4bde33ecff',
+    appId: '1:682545265646:ios:f6e03a66e9a4d04b33ecff',
     messagingSenderId: '682545265646',
     projectId: 'personal-finance-app-90e94',
     storageBucket: 'personal-finance-app-90e94.appspot.com',
-    iosClientId: '682545265646-lrbvf05ivpcle5br92lk4e955v4tm97e.apps.googleusercontent.com',
-    iosBundleId: 'com.example.personalFinanceAppBeta',
+    iosClientId: '682545265646-vh6sbrjf1td9pqcuukv7sfc4rq601ek3.apps.googleusercontent.com',
+    iosBundleId: 'dev.emir.financeApp',
   );
 }
