@@ -7,14 +7,14 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:682545265646:android:31fe5f76a9b77a9a33ecff",
+        "mobilesdk_app_id": "1:682545265646:android:0c26097d0b2e203733ecff",
         "android_client_info": {
           "package_name": "com.example.personal_finance_app_beta"
         }
       },
       "oauth_client": [
         {
-          "client_id": "682545265646-pdhn1e2tqgm1oe1l6fe4neph7noipmfr.apps.googleusercontent.com",
+          "client_id": "682545265646-fc73864m57vrd8530h122cmp3p4k1flp.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
@@ -27,8 +27,15 @@
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "682545265646-pdhn1e2tqgm1oe1l6fe4neph7noipmfr.apps.googleusercontent.com",
+              "client_id": "682545265646-fc73864m57vrd8530h122cmp3p4k1flp.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "682545265646-07qc5eqcume2id3vehjisnhe6pmle3vp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.saleemi.finance"
+              }
             }
           ]
         }

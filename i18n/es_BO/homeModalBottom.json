@@ -1,0 +1,8 @@
+{
+    "addPhoto" : "Agregar foto",
+    "editPhoto": "Editar foto",
+    "enterValidAmount" : "Ingrese un monto válido",
+    "description": "Descripción",
+    "price" : "Precio",
+    "saveExpense" : "Guardar gasto"
+}
