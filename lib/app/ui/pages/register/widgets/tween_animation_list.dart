@@ -14,7 +14,7 @@ List<TweenAnimationBuilder<double>> listTweens = [
           height: 160,
           width: 160,
           decoration: BoxDecoration(
-            color: AppColorsTheme.kBlue.shade100.withOpacity(0.24),
+            color: AppColorsTheme.kRed.shade100.withOpacity(0.24),
             shape: BoxShape.circle,
           ),
         ),
@@ -32,7 +32,7 @@ List<TweenAnimationBuilder<double>> listTweens = [
           height: 100,
           width: 100,
           decoration: BoxDecoration(
-            color: AppColorsTheme.kBlue.withOpacity(0.24),
+            color: AppColorsTheme.kRed.withOpacity(0.24),
             shape: BoxShape.circle,
           ),
         ),
@@ -55,7 +55,7 @@ List<TweenAnimationBuilder<double>> listTweens = [
             height: 240,
             width: 240,
             decoration: BoxDecoration(
-              color: AppColorsTheme.kBlue.withAlpha(160),
+              color: AppColorsTheme.kRed.withAlpha(160),
               shape: BoxShape.circle,
             ),
           ),
@@ -74,7 +74,7 @@ List<TweenAnimationBuilder<double>> listTweens = [
           height: 40,
           width: 40,
           decoration: const BoxDecoration(
-            color: AppColorsTheme.kBlue,
+            color: AppColorsTheme.kRed,
             shape: BoxShape.circle,
           ),
         ),
@@ -97,7 +97,7 @@ List<TweenAnimationBuilder<double>> listTweens = [
             height: 40,
             width: 40,
             decoration: BoxDecoration(
-              color: AppColorsTheme.kBlue.withOpacity(0.1),
+              color: AppColorsTheme.kRed.withOpacity(0.1),
               shape: BoxShape.circle,
             ),
           ),

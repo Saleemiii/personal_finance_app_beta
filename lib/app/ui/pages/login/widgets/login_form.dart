@@ -67,7 +67,7 @@ class LoginForm extends StatelessWidget {
             ),
             MaterialButton(
               onPressed: () => sendLoginForm(context),
-              color: AppColorsTheme.kBlue,
+              color: AppColorsTheme.kRed,
               minWidth: double.infinity,
               shape: const RoundedRectangleBorder(
                 borderRadius: BorderRadius.all(

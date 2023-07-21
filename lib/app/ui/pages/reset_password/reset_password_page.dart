@@ -44,7 +44,7 @@ class ResetPasswordPage extends StatelessWidget {
                       ),
                       MaterialButton(
                         onPressed: () => _submit(context),
-                        color: AppColorsTheme.kBlue,
+                        color: AppColorsTheme.kRed,
                         minWidth: double.infinity,
                         shape: const RoundedRectangleBorder(
                           borderRadius: BorderRadius.all(

@@ -11,7 +11,7 @@ class NameOfApp extends StatelessWidget {
     return Text(
       AppConstants.nameOfApp,
       style: GoogleFonts.ubuntu(
-        color: AppColorsTheme.kBlue,
+        color: AppColorsTheme.kRed,
         fontSize: 36,
         fontWeight: FontWeight.w900,
         letterSpacing: 12,

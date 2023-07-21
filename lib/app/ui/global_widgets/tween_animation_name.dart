@@ -28,7 +28,7 @@ class TweenAnimationName extends StatelessWidget {
                     color: AppColorsTheme.white,
                     fontSize: 32.0,
                     fontWeight: FontWeight.bold,
-                    letterSpacing: 12,
+                    letterSpacing: 4,
                   ),
                 ),
               );
@@ -44,11 +44,12 @@ class TweenAnimationName extends StatelessWidget {
                 left: d,
                 child: Text(
                   text,
+                  textAlign: TextAlign.center,
                   style: GoogleFonts.ubuntu(
                     color: AppColorsTheme.white,
                     fontSize: 32.0,
                     fontWeight: FontWeight.bold,
-                    letterSpacing: 12,
+                    letterSpacing: 4,
                   ),
                 ),
               );

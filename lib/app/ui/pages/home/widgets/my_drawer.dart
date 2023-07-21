@@ -24,7 +24,7 @@ class MyDrawer extends StatelessWidget {
             flex: 3,
             child: Container(
               alignment: Alignment.bottomCenter,
-              color: AppColorsTheme.kBlue,
+              color: AppColorsTheme.kRed,
               height: double.infinity,
               width: double.infinity,
               padding: const EdgeInsets.all(8.0),

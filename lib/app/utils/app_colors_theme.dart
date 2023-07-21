@@ -2,28 +2,28 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 class AppColorsTheme {
-  static const MaterialColor kBlue = MaterialColor(
-    0xFF26C2FF,
+  static const MaterialColor kRed = MaterialColor(
+    0xFFB87B77,
     <int, Color>{
-      50: Color(0xFFE4F5FC), //10%
-      100: Color(0xFF9FE6FF), //20%
-      200: Color(0xFF70DEFF), //30%
-      300: Color(0xFF26C2FF), //40%
-      400: Color(0xFF0089C5), //50%
-      500: Color(0xFF006B98), //60%
-      600: Color(0xFF1B57D8), //70%
-      700: Color(0xFF001BA2), //80%
-      800: Color(0xFF021070), //90%
-      900: Color(0xFF03086B), //100%
+      50: Color(0xFFB87B77), //10%
+      100: Color(0xFFB6544F), //20%
+      200: Color(0xFFC23E36), //30%
+      300: Color(0xFFB91F14), //40%
+      400: Color(0xFFB90A00), //50%
+      500: Color(0xFFEA0F00), //60%
+      600: Color(0xFF880800), //70%
+      700: Color(0xFF640903), //80%
+      800: Color(0xFF480601), //90%
+      900: Color(0xFF210200), //100%
     },
   );
 
   static ThemeData kThemeLight = ThemeData(
-    primarySwatch: AppColorsTheme.kBlue,
-    primaryColor: AppColorsTheme.kBlue,
+    primarySwatch: AppColorsTheme.kRed,
+    primaryColor: AppColorsTheme.kRed,
     floatingActionButtonTheme: const FloatingActionButtonThemeData(
       foregroundColor: Colors.white,
-      backgroundColor: AppColorsTheme.kBlue,
+      backgroundColor: AppColorsTheme.kRed,
     ),
     appBarTheme: const AppBarTheme(
       foregroundColor: Colors.white,

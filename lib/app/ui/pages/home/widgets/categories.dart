@@ -81,9 +81,9 @@ class _CategoryItem extends StatelessWidget {
           width: double.maxFinite,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(10),
-            color: AppColorsTheme.kBlue.shade400,
+            color: AppColorsTheme.kRed,
             border: Border.all(
-              color: AppColorsTheme.kBlue.shade300,
+              color: AppColorsTheme.kRed.shade300,
             ),
           ),
           child: AutoSizeText(

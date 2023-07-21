@@ -52,8 +52,8 @@ class HomePage extends StatelessWidget {
                           ? const Center(
                               child: CircularProgressIndicator(),
                             )
-                          : Padding(
-                              padding: const EdgeInsets.only(
+                          : const Padding(
+                              padding: EdgeInsets.only(
                                 top: 44.0,
                               ),
                               child: MyCategories(),
@@ -62,11 +62,11 @@ class HomePage extends StatelessWidget {
                   ],
                 ),
                 TweenAnimationName(
-                  text: AppConstants.nameOfApp.substring(0, 5),
+                  text: AppConstants.nameOfApp.substring(0, 6),
                   isLeft: true,
                 ),
                 TweenAnimationName(
-                  text: AppConstants.nameOfApp.substring(5),
+                  text: AppConstants.nameOfApp.substring(6),
                   isLeft: false,
                 ),
                 MyTotalCard(

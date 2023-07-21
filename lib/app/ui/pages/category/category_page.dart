@@ -21,17 +21,16 @@ class CategoryPage extends StatelessWidget {
           appBar: AppBar(
             elevation: 0,
             backgroundColor: Colors.white,
-            leading: BackButton(color: AppColorsTheme.kBlue),
+            leading: BackButton(color: AppColorsTheme.kRed),
             title: Text(
               EnumToString.convertToString(
                 controller.currentExpenseType,
                 camelCase: true,
               ),
               style: GoogleFonts.ubuntu(
-                color: AppColorsTheme.kBlue,
+                color: AppColorsTheme.kRed,
                 fontSize: 32.0,
                 fontWeight: FontWeight.bold,
-                letterSpacing: 12,
               ),
             ),
           ),

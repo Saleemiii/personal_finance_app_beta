@@ -11,7 +11,7 @@ import 'generated/translations.g.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  LocaleSettings.useDeviceLocale();
+  LocaleSettings.setLocale(AppLocale.en);
   await Firebase.initializeApp(
     name: 'costometro',
     options: DefaultFirebaseOptions.currentPlatform,

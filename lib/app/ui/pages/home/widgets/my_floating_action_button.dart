@@ -28,7 +28,7 @@ class MyFloatingActionButton extends StatelessWidget {
       },
       child: const Icon(
         Icons.add,
-        color: AppColorsTheme.kBlue,
+        color: AppColorsTheme.kRed,
       ),
     );
   }

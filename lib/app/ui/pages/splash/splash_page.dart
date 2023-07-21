@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:finance_app/app/ui/pages/splash/controller/splash_controller.dart';
 import 'package:finance_app/app/utils/app_colors_theme.dart';
 import 'package:finance_app/app/utils/app_constants.dart';
@@ -25,13 +26,13 @@ class SplashPage extends StatelessWidget {
       },
       builder: (_, __) {
         return Scaffold(
-          backgroundColor: AppColorsTheme.kBlue,
+          backgroundColor: AppColorsTheme.kRed,
           body: Center(
-            child: Text(
+            child: AutoSizeText(
               AppConstants.nameOfApp,
               style: GoogleFonts.ubuntu(
                 color: AppColorsTheme.white,
-                fontSize: 48,
+                fontSize: 36,
                 fontWeight: FontWeight.bold,
               ),
             ),

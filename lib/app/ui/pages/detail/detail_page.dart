@@ -17,7 +17,7 @@ class DetailPage extends StatelessWidget {
           title: Text(
             controller.currentExpense.detail ?? AppConstants.empty,
             style: GoogleFonts.ubuntu(
-              color: AppColorsTheme.kBlue,
+              color: AppColorsTheme.kRed,
               fontSize: 32.0,
               fontWeight: FontWeight.bold,
               letterSpacing: 12,

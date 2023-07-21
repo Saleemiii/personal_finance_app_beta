@@ -5,17 +5,19 @@ import 'package:finance_app/app/domain/models/expense.dart';
 import 'package:finance_app/app/domain/repositories/expenses_from_firebase_repository.dart';
 import 'package:finance_app/app/ui/pages/home/controller/home_provider.dart';
 import 'package:finance_app/app/utils/app_constants.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 
 class ExpensesFromFirebaseRepositoryImpl
     extends ExpensesFromFirebaseRepository {
   final _firebaseInstance =
       FirebaseFirestore.instance.collection(AppConstants.expenses);
+  final _auth = FirebaseAuth.instance;
   final _storageRef = FirebaseStorage.instance.ref();
 
   @override
   Stream<QuerySnapshot<Object?>> getFirebaseExpenses() {
-    final Stream<QuerySnapshot> expensesStream = _firebaseInstance
+    final Stream<QuerySnapshot> expensesStream = _firebaseInstance.where('userId',isEqualTo: FirebaseAuth.instance.currentUser!.uid)
         // .where(
         //   'date',
         //   isLessThan: '1643673600',
@@ -47,6 +49,7 @@ class ExpensesFromFirebaseRepositoryImpl
     required String? currentImagePath,
   }) async {
     await _firebaseInstance.add({
+      'userId': _auth.currentUser!.uid,
       'price': currentPrice,
       'detail': currentDetail,
       'date': dateTime.microsecondsSinceEpoch,

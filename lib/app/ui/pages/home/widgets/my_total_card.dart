@@ -33,25 +33,25 @@ class MyTotalCard extends StatelessWidget {
                   )
                   .toUpperCase(),
               style: GoogleFonts.ubuntu(
-                color: AppColorsTheme.kBlue,
+                color: AppColorsTheme.kRed,
                 fontSize: 24.0,
-                letterSpacing: 12,
+                letterSpacing: 6,
               ),
             ),
             Text(
               'Total',
               style: GoogleFonts.ubuntu(
-                color: AppColorsTheme.kBlue,
+                color: AppColorsTheme.kRed,
                 // fontSize: 24.0,
 
-                letterSpacing: 8,
+                letterSpacing: 4,
               ),
             ),
             RichText(
               text: TextSpan(
                 text: NumberFormat.currency(name: "Rs ").format(amount),
                 style: GoogleFonts.ubuntu(
-                  color: AppColorsTheme.kBlue,
+                  color: AppColorsTheme.kRed,
                   fontSize: 32.0,
                   fontWeight: FontWeight.bold,
                 ),

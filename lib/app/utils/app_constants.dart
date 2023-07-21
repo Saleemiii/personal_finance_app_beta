@@ -16,7 +16,7 @@ class AppConstants {
   static const String preferencesKeyLocal = 'locale';
   static const String unknown = 'unknown';
   static const String ok = 'ok';
-  static const String nameOfApp = 'Costometro';
+  static const String nameOfApp = 'Finteligent';
   static const String networkRequestFailed = 'network-request-failed';
   static const String nickName = 'nick name';
   static const String userDisabled = 'user-disabled';
